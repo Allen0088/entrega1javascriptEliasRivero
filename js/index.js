@@ -1,23 +1,48 @@
-const ticketOrigen = "1234"
-let TicketIngresar= prompt("ingrese su numero de ticket")
+const cine = ["flow", "miku", "cars", "enredados"]
+console.log(cine)
 
-while (ticketOrigen != TicketIngresar){
-    TicketIngresar = prompt ("ingrese su contaseña")
+function flow(){
+    let pelicula1= prompt("elija la ubicacion")
+    let pelicula2= parseInt(prompt("elija un horario"))
+    alert("te esperamos en  "+pelicula1+ "  en el horario "+ pelicula2)
 }
 
-let edad = 18
-let dinero = true
-let ticket = "minecraft"
-
-if(edad >= 18 && dinero && ticket){
-console.log("podes ingresar")
-} else if (edad <= 17){
-console.log("no podes pasar por menor de edad")
-} else if (dinero == false){
-    console.log("dinero insuficiente")
-} else {
-    console.log("no podes ingresar")
+function miku(){
+    let pelicula3= parseInt(prompt("elija la ubicacion"))
+    let pelicula4= parseInt(prompt("elija un horario"))
+    alert("te esperamos en "+pelicula3+ "en el horario" + pelicula4)
+}
+function cars(){
+    let pelicula5= parseInt(prompt("elija la ubicacion"))
+    let pelicula6= parseInt(prompt("elija un horario"))
+    alert("te esperamos en "+pelicula5+ "en el horario"+pelicula6)
+}
+function enredados(){
+    let pelicula7= parseInt(prompt("elija la ubicacion"))
+    let pelicula8= parseInt(prompt("elija un horario"))
+    alert("te esperamos en "+pelicula7+ "en el horario" + pelicula8)
 }
 
+let cartelera = parseInt(prompt("elija la pelicula que desea ver: \n 1-Flow, un mundo que salvar \n 2-Miku \n 3-Cars \n 4-Enredados \n"))
+
+while (cartelera != 5){
+switch(cartelera){
+    case 1:
+    flow()
+    break
+    case 2:
+    miku()
+    break
+    case 3:
+    cars()
+    break
+    case 4:
+    enredados()
+    break
+    default:
+    console.log("opcion incorrecta")
+}
+break
+}
 
 
