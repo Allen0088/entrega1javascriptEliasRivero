@@ -1,5 +1,7 @@
 class Pelicula{
+    static id = 0
     constructor(pelicula, duracion, tresd){
+        this.id = ++Pelicula.id,
         this.pelicula = pelicula,
         this.duracion = duracion,
         this.tresd = tresd
@@ -20,23 +22,23 @@ console.log(pelicula4)
 function flow(){
     let pelicula1= prompt("elija la ubicacion")
     let pelicula2= parseInt(prompt("elija un horario"))
-    alert("te esperamos en  "+pelicula1+ "  en el horario "+ pelicula2)
+    alert("te esperamos en  "+pelicula1+ " en el horario "+ pelicula2 + "  a ver la pelicula Flow, un mundo que salvar" + ".Tu codigo de sala es: 349")
 }
 
 function miku(){
-    let pelicula3= parseInt(prompt("elija la ubicacion"))
-    let pelicula4= parseInt(prompt("elija un horario"))
-    alert("te esperamos en "+pelicula3+ "en el horario" + pelicula4)
+    let pelicula3= prompt("elija la ubicacion")
+    let pelicula4= prompt("elija un horario")
+    alert("te esperamos en "+pelicula3+ " en el horario " + pelicula4)
 }
 function cars(){
-    let pelicula5= parseInt(prompt("elija la ubicacion"))
-    let pelicula6= parseInt(prompt("elija un horario"))
-    alert("te esperamos en "+pelicula5+ "en el horario"+pelicula6)
+    let pelicula5= prompt("elija la ubicacion")
+    let pelicula6= prompt("elija un horario")
+    alert("te esperamos en "+pelicula5+ " en el horario "+pelicula6)
 }
 function enredados(){
-    let pelicula7= parseInt(prompt("elija la ubicacion"))
-    let pelicula8= parseInt(prompt("elija un horario"))
-    alert("te esperamos en "+pelicula7+ "en el horario" + pelicula8)
+    let pelicula7= prompt("elija la ubicacion")
+    let pelicula8= prompt("elija un horario")
+    alert("te esperamos en "+pelicula7+ " en el horario " + pelicula8)
 }
 
 let cartelera = parseInt(prompt("elija la pelicula que desea ver: \n 1-Flow, un mundo que salvar \n 2-Miku no puede cantar \n 3-Cars \n 4-Enredados \n"))

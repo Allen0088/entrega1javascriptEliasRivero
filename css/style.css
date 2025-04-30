@@ -19,8 +19,46 @@ header{
     padding-left: 500px;
 }
 
-.img-mine{
-    width: 500px;
-    height: 500px;
+.peliculas{
+    margin: 100px;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+}
+
+.peli1{
     object-fit: contain;
+    height: 300px;
+    width: 300px;
+}
+
+.peli2{
+    object-fit: contain;
+    height: 300px;
+    width: 300px;
+}
+
+.peli3{
+    object-fit: contain;
+    height: 300px;
+    width: 300px;
+}
+
+.peli4{
+    object-fit: contain;
+    height: 300px;
+    width: 300px;
+}
+
+.boton-uno{
+    margin-left: 850px;
+    margin-top: 200px;
+}
+
+button a{
+    display: flex;
+    text-decoration: none;
+background-color: gray;
+color: white;
+padding: 10px;
 }
